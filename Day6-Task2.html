@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form </title>
+    <style>
+        .xyz{
+            display: block;
+            width: 75%;
+            border: 2px solid black;
+            border: none;
+            padding-left: 50%;
+            box-shadow: 3px 3px 3px 3px lightgrey;
+            position: absolute;
+            top: 10%;
+            left: 75%;
+        }
+        input{
+            padding: 1%;
+            box-shadow: 3px 3px 3px 3px lightgray;
+            border: none;
+        }
+        h2{
+            text-shadow: 2px 2px lightgray;
+            padding-top: 1%;
+            padding-left: 5%;
+        }
+        h2:hover{
+            color: blue;
+            text-shadow: 2px 2px orange;
+        }
+        label{
+            font-weight: 600;
+        }
+        button{
+            display: inline-block;
+            border-radius: 50px;
+            width: 10%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            background-color: green;
+            color: aliceblue;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 2s;
+        }
+        button:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class=".xyz">
+        <h2>Signup Form</h2> 
+        <form>
+            <lable style="font-weight: 600;" for="fname">first name : </lable>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name " required>
+            <br/><br/>
+            <lable style="font-weight: 600;" for="lname">last name : </lable>
+            <input type="text" id="lname" name="lname" placeholder=" Enter your last name here " required>
+            <br/><br/>
+            <label for="mail">email : </label>
+            <input type="email" id="mail" name="email" placeholder="Enter your email here " required>
+            <br/><br/>
+            <label for="pswd">password : </label>
+            <input style="font-weight: 900;" type="password" id="pswd" name="password" placeholder=". . . . . . . ." required>
+            <br/><br/>
+            <label for="signup">mobile no : </label>
+            <input type="mobile no" id="mobile no" name="mobile no" placeholder="Enter Your Mobile Number " required>
+            <br/><br/>
+            <label for="pic">upload your pic : </label>
+            <input type="file" id="pic" name="pic" required>
+            <br/><br/>
+            <button type="reset">RESET!</button>&nbsp;&nbsp;&nbsp;
+            <button type="submit">SUBMIT!</button>
+            <br/><br/>
+        </form>
+    </div>
+</body>
+</html>
